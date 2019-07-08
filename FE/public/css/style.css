@@ -1,0 +1,62 @@
+#section-potensi{
+    height: 100vh;
+    width: 100vw;
+    -webkit-font-smoothing: antialiased;
+}
+
+.section-potensi-cengkeh{
+    height: 50vh;
+}
+.section-potensi-kambing{
+    height: 50vh;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li{
+      margin-top: 10px;
+}
+.contact-info{
+    padding-left: 0;
+}
+
+.contacts-info-title{
+    color: white
+}
+footer{
+    background: #191919;
+    color: #828282;
+    padding-top: 40px;
+    line-height: 1.5em;
+}
+
+.footer-section{
+    margin-top: 10px;
+    padding-left: 55px;
+    padding-right:55px;
+}
+#footer-section-about{
+    line-height: 2em;
+}
+.footer-section-h5{
+    color: #76ff03;
+    margin-bottom: 1rem;
+    
+}
+
+#footer-bottom{
+    margin-top: 20px;
+    background: #252525;
+    padding: 1em 1em 0.5em 1em;
+    font-size: 75%;
+}
+
+@media(max-width: 576px){
+  .footer-section{
+    margin-top: 10px;
+    padding-left: 40px;
+    padding-right:40px;
+  }  
+}
