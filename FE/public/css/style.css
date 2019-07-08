@@ -92,6 +92,26 @@ footer{
     font-size: 75%;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    background: transparent; 
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: orangered; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: red; 
+  }
+
 @media(max-width: 576px){
   .footer-section{
     margin-top: 10px;
