@@ -9,7 +9,9 @@
     filter: brightness(60%);
     z-index: -1;
 }
-
+#poly-map{
+    max-height: 400px;
+}
 .section-header{
     border-bottom: 3px solid orangered;
     padding-bottom: 4px;
@@ -125,10 +127,14 @@ footer{
     background: red; 
   }
 
-@media(max-width: 576px){
+@media(max-width: 800px){
   .footer-section{
     margin-top: 10px;
     padding-left: 40px;
     padding-right:40px;
   }  
+
+  #poly-map{
+    max-height: 200px;
+}
 }
