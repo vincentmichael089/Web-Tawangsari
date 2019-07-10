@@ -11,10 +11,11 @@
 }
 #poly-map{
    min-height: 300px;
+   max-height: 400px;
 }
 
 
-h1,h2,h3,h4{
+h1,h2,h3,h4, p {
     line-height: 1.7em;
 }
 .section-header{
@@ -140,7 +141,10 @@ footer{
     padding-left: 40px;
     padding-right:40px;
   }  
-
+  .section-content{
+    padding-top: 1em;
+    
+}
   #poly-map{
     max-height: 300px;
 }
