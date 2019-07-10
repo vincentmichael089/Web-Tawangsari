@@ -10,17 +10,35 @@
     z-index: -1;
 }
 #poly-map{
-    max-height: 400px;
+   min-height: 300px;
+}
+
+
+h1,h2,h3,h4{
+    line-height: 1.7em;
 }
 .section-header{
     border-bottom: 3px solid orangered;
     padding-bottom: 4px;
 }
 
+.section-content{
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
 #landing-word{
     text-align: center;
     color: white;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
+
+
 
 .navbar{
     background: #191919e1;
@@ -43,18 +61,9 @@ body{
 }    
 
 
-.center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-
-
 section{
     height: 100vh;
+    padding-top: 4em;
 }
 .potensi-items{
     display: flex;
@@ -62,9 +71,7 @@ section{
     align-items: center;
 }
 
-#section-landing{ 
 
-}
 ul {
     list-style-type: none;
 }
@@ -135,6 +142,6 @@ footer{
   }  
 
   #poly-map{
-    max-height: 200px;
+    max-height: 300px;
 }
 }
