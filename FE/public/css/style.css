@@ -24,8 +24,8 @@ h1,h2,h3,h4, p {
 }
 
 .section-content{
-    padding-top: 2em;
-    padding-bottom: 1em;
+    padding-top: 0.5em;
+    
 }
 
 .center{
@@ -84,7 +84,7 @@ ul {
 }
 
 li{
-      margin-top: 10px;
+      margin-top: 1em;
 }
 .contact-info{
     padding-left: 0;
