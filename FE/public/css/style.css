@@ -14,17 +14,32 @@
    max-height: 400px;
 }
 
+.box{
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 0 10px 1.5em;
+    background: #fff;
+    box-shadow: 0 10px 29px 0 rgba(68,88,144,.1);
+}
 
 h1,h2,h3,h4, p {
     line-height: 1.7em;
 }
 .section-header{
-    border-bottom: 3px solid orangered;
+    /*border-bottom: 3px solid orangered;*/
     padding-bottom: 4px;
+    color: #19646A
 }
 
 .section-content{
     padding-top: 0.5em;
+    
+}
+
+#section-potensi{
+    background: linear-gradient(#f4f4f4 10%,#b6e9d9 50%,#00df96);
     
 }
 
@@ -67,10 +82,16 @@ body{
     margin: 0; 
 }    
 
-
 section{
-    height: 100vh;
     padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+#section-landing{
+    height: 100vh;
+}
+#section-profilsingkat{
+    background: #f4f4f4;
 }
 .potensi-items{
     display: flex;
