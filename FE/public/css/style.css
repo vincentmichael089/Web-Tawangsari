@@ -38,8 +38,12 @@ h1,h2,h3,h4, p {
     
 }
 
+#section-profilsingkat{
+    background: linear-gradient(#f4f4f4 10%,#e4faf8 );
+}
+
 #section-potensi{
-    background: linear-gradient(#f4f4f4 10%,#b6e9d9 50%,#00df96);
+    background: linear-gradient(#e4faf8 10%,#b6e9d9 50%,#00df96);
 
 }
 
@@ -47,6 +51,9 @@ h1,h2,h3,h4, p {
     box-shadow:  0px 0px 5px #000000;
 }
 
+#section-akses-lokasi{
+    background: #eafdf7;
+}
 .counters span {
     font-family: Montserrat,sans-serif;
     font-weight: 700;
@@ -76,7 +83,7 @@ h1,h2,h3,h4, p {
 
 .navbar{
     background: #191919e1;
-    border-bottom: #76ff03 2px solid;
+    border-bottom: #00df96 2px solid;
 }
 .nav-item{
     color: white;
@@ -86,7 +93,7 @@ h1,h2,h3,h4, p {
 }
 
 .nav-item:hover{
-    border-bottom: #76ff03 2px solid;
+    border-bottom: #00df96 2px solid;
 }
 
 body{
@@ -102,9 +109,7 @@ section{
 #section-landing{
     height: 100vh;
 }
-#section-profilsingkat{
-    background: #f4f4f4;
-}
+
 .potensi-items{
     display: flex;
     justify-content: center;
