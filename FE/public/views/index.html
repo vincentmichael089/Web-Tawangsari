@@ -11,6 +11,13 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800'
         rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -58,9 +65,9 @@
                     <span>Selamat datang di website Desa Tawangsari </span>
                 </h1>
             </div>
- 
-                <img class="bottom-image" src="../res/section-trans.svg" alt="" style="width: 100vm">
-     
+
+            <img class="bottom-image" src="../res/section-trans.svg" alt="" style="width: 100vm">
+
         </section>
         <!--SECTION PROFIL-->
         <section id="section-profilsingkat" class="body-section center">
@@ -160,19 +167,39 @@
 
         <!--SECTION AKSES LOKASI-->
         <section id="section-akses-lokasi" class="body-section center">
+
             <div class="container">
                 <div>
                     <h1 class="text-center"><span class="section-header">Lokasi Desa Tawangsari</span></h1>
-                    <h4 style="text-align: center"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, enim.
-                    </h4>
+
                     <br>
                     <div class="row">
-                        <div class="col-md-6">disini nanti ada peta</div>
-                        <div class="col-md-6">Desa Tawangsari berjarak x dari y, z dari a, ......... dan dapat diakses
-                            dengan kendaraan roda 2 maupun roda 4. Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Cum, aliquid!</div>
+                        <div class="col-md-6">
+                            <div id="mapid" style="height: 350px"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <br>
+                            <h4> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Ea, enim.
+                            </h4>
+                            <br>
+                            <p> Desa Tawangsari berjarak x dari y, z dari a, ......... dan dapat diakses
+                                dengan kendaraan roda 2 maupun roda 4. Lorem ipsum, dolor sit amet consectetur
+                                adipisicing
+                                elit. Cum, aliquid!</p>
+                            <br>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-success text-center"
+                                    onclick=" window.open('https://www.google.com/maps/place/Tawangsari,+Kaligesing,+Purworejo+Regency,+Central+Java/@-7.7093349,110.1173872,15z/data=!3m1!4b1!4m5!3m4!1s0x2e7aededc57b4999:0x272c91b8575d466d!8m2!3d-7.7075652!4d110.125369http://google.com','_blank')">Lihat
+                                    di Google Maps</button></div>
+
+                        </div>
                     </div>
                 </div>
+
+            </div>
+            </div>
+            </div>
             </div>
         </section>
     </main>
@@ -216,6 +243,7 @@
     </footer>
 
     <script src='../js/cred.js'></script>
+    <script src="../js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"

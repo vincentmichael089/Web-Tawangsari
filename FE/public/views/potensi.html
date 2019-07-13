@@ -10,8 +10,15 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800'
         rel='stylesheet' type='text/css'>
+        
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
     <link rel="stylesheet" href="../css/style.css">
-    
+
 </head>
 
 <body>
@@ -49,9 +56,10 @@
     </header>
     <!--MAIN-->
     <main>
+
         <!--SECTION PETA-->
         <section id="section-landing" class="body-section">
-            
+                <div id="mapid" style="height: 100%"></div>
         </section>
     </main>
     <!--FOOTER-->
@@ -65,8 +73,8 @@
                             <img src="/res/logo-hz.svg" width="295px">
                         </p>
                         <p class="text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt tenetur sequi praesentium
-                            nemo nesciunt laudantium.</p>
+                            Website Desa ini dibuat oleh Unit KKN-PPM Universitas Gadjah Mada 2019 Kecamatan Kaligesing
+                            untuk Desa Tawangsari.</p>
                     </div>
                 </div>
 
@@ -77,8 +85,9 @@
                             <h5>Kontak</h5>
                         </div>
                         <ul class="contact-info">
-                            <li><span class="contacts-info-title">Telepon:</span><br>(0711) xxxxxx</li>
-                            <li><span class="contacts-info-title">Alamat:</span><br>alamat, Desa Tawangsari, Kecamatan
+                            <li><span class="contacts-info-title">Telepon:</span><br>(xxxx) xxxxxx</li>
+                            <li><span class="contacts-info-title">Alamat:</span><br>Jl. Kyai Kuasyen no.1, Desa
+                                Tawangsari, Kecamatan
                                 Kaligesing, Kabupaten Purworejo, Jawa Tengah, Indonesia.</li>
                             <li><span class="contacts-info-title">E-mail:</span><br>email@yahoo.com</li>
                         </ul>
@@ -91,6 +100,7 @@
         </div>
     </footer>
     <script src='../js/cred.js'></script>
+    <script src="../js/potensi.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
