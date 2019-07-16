@@ -117,6 +117,9 @@ section{
 #section-landing{
     height: 100vh;
 }
+#section-login{
+    height: 80vh;
+}
 
 .potensi-items{
     display: flex;
