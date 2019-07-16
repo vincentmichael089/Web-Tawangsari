@@ -53,11 +53,13 @@ h1,h2,h3,h4, p {
 }
 
 #section-wisata{
+    background: white;
     box-shadow:  0px 0px 5px #000000;
 }
 
 #section-akses-lokasi{
-    background: #eafdf7;
+    background: linear-gradient(#b6e9d9 5%,#e4faf8 90%);
+    box-shadow: inset 0px 0px 5px #000000;
 }
 .counters span {
     font-family: Montserrat,sans-serif;
