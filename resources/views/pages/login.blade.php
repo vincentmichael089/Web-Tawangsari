@@ -42,10 +42,10 @@
                                 <a class="nav-link js-scroll-trigger" href="/">Beranda</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="/berita">Berita</a>
+                                <a class="nav-link js-scroll-trigger" href="/posts">Berita</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="/potensi">Peta Potensi</a>
+                                <a class="nav-link js-scroll-trigger" href="/coordinates">Peta Potensi</a>
                             </li>
                             <li class="nav-item active">
                                 <a class="nav-link js-scroll-trigger" href="#">Login </a>

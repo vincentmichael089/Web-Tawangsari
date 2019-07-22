@@ -14,12 +14,12 @@ class PagesController extends Controller
 
     public function berita(){
         $title = 'Berita | Desa Tawangsari'; 
-        return view('pages.berita')->with('title', $title);
+        return view('posts.index')->with('title', $title);
     }
 
     public function potensi(){
         $title = 'Peta Potensi | Desa Tawangsari'; 
-        return view('pages.potensi')->with('title', $title);
+        return view('coordinates.index')->with('title', $title);
     }
 
     public function login(){

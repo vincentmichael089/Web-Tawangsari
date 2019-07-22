@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{$title}}</title>
+    <title>'Berita | Desa Tawangsari'</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800'
@@ -16,7 +16,7 @@
 <body>
     <!--HEADER-->
     <header>
-        <div id="bg-image"></div>
+       <!-- <div id="bg-image"></div>-->
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-dark fixed-top">
                 <div class="container">
@@ -36,7 +36,7 @@
                                 <a class="nav-link js-scroll-trigger" href="#">Berita</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="/potensi">Peta Potensi</a>
+                                <a class="nav-link js-scroll-trigger" href="/coordinates">Peta Potensi</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link js-scroll-trigger" href="/login">Login </a>
@@ -49,7 +49,17 @@
     </header>
     <!--MAIN-->
     <main>
-        <div class="container" style="min-height: 100vh">
+        <div class="container" style="min-height: 100vh; padding-top: 10vh">
+            @if(count($posts)>0)
+                @foreach ($posts as $post)
+                    <div class="well">
+                    <h1>{{$post->title}}</h1>
+                    <small>Dibagikan tanggal {{$post->created_at}}</small>
+                    </div>
+                @endforeach
+            @else
+                <p>No posts found!</p>
+            @endif
         </div>
     </main>
     <!--FOOTER-->

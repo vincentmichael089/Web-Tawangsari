@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Coordinate; 
 
 class CoordinatesController extends Controller
 {
@@ -14,6 +15,8 @@ class CoordinatesController extends Controller
     public function index()
     {
         //
+        $coordinates = Coordinate::all();
+        return view('coordinates.index')->with('coordinates', $coordinates);
     }
 
     /**
