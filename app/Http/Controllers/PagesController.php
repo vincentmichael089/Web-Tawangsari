@@ -8,18 +8,22 @@ class PagesController extends Controller
 {
     //
     public function index(){
-        return view('pages.index'); 
+        $title = 'Desa Tawangsari'; 
+        return view('pages.index')->with('title', $title); 
     }
 
     public function berita(){
-        return view('pages.berita');
+        $title = 'Berita | Desa Tawangsari'; 
+        return view('pages.berita')->with('title', $title);
     }
 
     public function potensi(){
-        return view('pages.potensi');
+        $title = 'Peta Potensi | Desa Tawangsari'; 
+        return view('pages.potensi')->with('title', $title);
     }
 
     public function login(){
-        return view('pages.login')
+        $title = 'Masuk | Desa Tawangsari'; 
+        return view('pages.login')->with('title', $title);
     }
 }
