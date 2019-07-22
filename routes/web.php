@@ -22,4 +22,6 @@ Route::get('/login', 'PagesController@login');
 
 Route::resource('posts','PostsController');
 
+Route::resource('coordinates','CoordinatesController');
+
 
