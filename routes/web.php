@@ -20,3 +20,6 @@ Route::get('/potensi', 'PagesController@potensi');
 Route::get('/login', 'PagesController@login');
 
 
+Route::resource('posts','PostsController');
+
+
