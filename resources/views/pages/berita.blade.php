@@ -30,16 +30,16 @@
                     <div class="navbar-collapse collapse align-middle" id="navbarCollapse" style="">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="#body-section-landing">Beranda</a>
+                                <a class="nav-link js-scroll-trigger" href="/">Beranda</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="#body-section-bidang">Berita</a>
+                                <a class="nav-link js-scroll-trigger" href="#">Berita</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="#body-section-about">Peta Potensi</a>
+                                <a class="nav-link js-scroll-trigger" href="/potensi">Peta Potensi</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="#body-section-porto">Login </a>
+                                <a class="nav-link js-scroll-trigger" href="/login">Login </a>
                             </li>
                         </ul>
                     </div>
