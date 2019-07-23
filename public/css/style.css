@@ -9,6 +9,11 @@
     filter: brightness(60%);
     z-index: -1;
 }
+
+#section-berita{
+    background: linear-gradient(#f4f4f4,#b6e9d9 80%,#00df96);
+}
+
 #poly-map{
    min-height: 300px;
    max-height: 400px;
@@ -27,6 +32,22 @@
     margin: 0 10px 1.5em;
     background: #fff;
     box-shadow: 0 10px 29px 0 rgba(68,88,144,.1);
+}
+
+.box-berita:hover{
+    scale: 1.5;
+}
+
+.berita-pic{
+
+}
+
+.berita-pic-pic{
+
+}
+
+.berita-content{
+
 }
 
 h1,h2,h3,h4, p {
