@@ -52,20 +52,23 @@
             <div class="container" style="min-height: 100vh; padding-top: 10vh">
                 @if(count($posts)>0)
                     @foreach ($posts as $post)
-                            <div class="row">
-                                <div class="col-md-4" style="max-height:200px;">
-                                    <div class="berita-pic">
-                                        <img id="poly-map" class="berita-pic-pic" src="../res/poly-map.svg" alt="" srcset="">
-                                    </div>
+                        <a href="/posts/{{$post->id}}">
+                           <div class="box">
+                                <div class="row">
+                                        <div class="col-md-4" style="max-height:200px;">
+                                            <div class="berita-pic">
+                                                <img id="poly-map" class="berita-pic-pic" src="../res/poly-map.svg" alt="" srcset="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="berita-content">
+                                                <h1>{{$post->title}}</h1>
+                                                <small>Dibagikan tanggal {{$post->created_at}}</small>
+                                            </div>
+                                        </div>
                                 </div>
-                                <div class="col-md-8">
-                                    <div class="berita-content">
-                                        <h1>{{$post->title}}</h1>
-                                        <small>Dibagikan tanggal {{$post->created_at}}</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                           </div>
+                        </a>
                     @endforeach
                 @else
                     <p>No posts found!</p>
