@@ -49,8 +49,10 @@
     <!--MAIN-->
     <main>
         <section id="section-berita">
-            <div class="container" style="min-height: 100vh; padding-top: 10vh">
-                <h2>{{$post->title}}</h2>
+            <div class="container" style="min-height: 100vh; padding-top: 10vh; background: #f4f4f4">
+                <h1>{{$post->title}}</h1>
+                <small>Dibagikan tanggal {{$post->created_at}}</small>
+                <hr>
                 <p>{{$post->body}}</p>
             </div>
         </section>
