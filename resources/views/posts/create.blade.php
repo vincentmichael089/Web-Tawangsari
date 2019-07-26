@@ -61,7 +61,7 @@
 
                         <div class="form-group">
                                 {{Form::label('body','Isi Berita')}}
-                                {{Form::textArea('body','',['class'=>'form-control', 'placeholder'=>'Isi Berita'])}}
+                                {{Form::textArea('body','',['id'=>'article-ckeditor','class'=>'form-control', 'placeholder'=>'Isi Berita'])}}
                             </div>
                             {{Form::submit('Submit',['class'=>'btn btn-primary'])}}
                     {{ Form::close() }}
@@ -113,6 +113,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"
         integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp"
         crossorigin="anonymous"></script>
+        <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+        <script>
+            CKEDITOR.replace( 'article-ckeditor' );
+        </script>
+  
 </body>
 
 </html>
