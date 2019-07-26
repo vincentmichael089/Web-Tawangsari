@@ -53,7 +53,7 @@
                 <h1>{{$post->title}}</h1>
                 <small>Dibagikan tanggal {{$post->created_at}}</small>
                 <hr>
-                <p>{{$post->body}}</p>
+                <p>{!!$post->body!!}</p>
             </div>
         </section>
     </main>
