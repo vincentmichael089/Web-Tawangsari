@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Berita | Desa Tawangsari</title>
+    <title>Tambah Berita | Desa Tawangsari</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800'
@@ -48,12 +48,23 @@
     </header>
     <!--MAIN-->
     <main>
-        <section id="section-berita" style="padding-bottom: 0">
-            <div class="container" style="min-height: 100vh; padding-top: 10vh; background: #f4f4f4">
-                <h1>{{$post->title}}</h1>
-                <small>Dibagikan tanggal {{$post->created_at}}</small>
-                <hr>
-                <p>{{$post->body}}</p>
+        <section id="section-tambah-berita" style="padding-bottom: 0;">
+            <div class="container" style="min-height: 100vh; padding-top: 10vh; background: #f4f4f4;">
+                <h1>Tambah Berita Baru</h1>
+                <br>
+                @include('inc.messages')
+                    {{ Form::open(['action' => 'PostsController@store', 'method'=>'POST']) }}
+                        <div class="form-group">
+                            {{Form::label('title','Judul Berita')}}
+                            {{Form::text('title','',['class'=>'form-control', 'placeholder'=>'Judul Berita'])}}
+                        </div>
+
+                        <div class="form-group">
+                                {{Form::label('body','Isi Berita')}}
+                                {{Form::textArea('body','',['class'=>'form-control', 'placeholder'=>'Isi Berita'])}}
+                            </div>
+                            {{Form::submit('Submit',['class'=>'btn btn-primary'])}}
+                    {{ Form::close() }}
             </div>
         </section>
     </main>

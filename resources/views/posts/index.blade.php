@@ -48,8 +48,9 @@
     </header>
     <!--MAIN-->
     <main>
-        <section id="section-berita">
+        <section id="section-berita" style="padding-bottom: 0">
             <div class="container" style="min-height: 100vh; padding-top: 10vh">
+                @include('inc.messages')
                 @if(count($posts)>0)
                     @foreach ($posts as $post)
                         <a href="/posts/{{$post->id}}">
