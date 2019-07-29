@@ -50,11 +50,18 @@
     <main>
         <section id="section-berita" style="padding-bottom: 0">
             <div class="container" style="min-height: 100vh; padding-top: 10vh; background: #f4f4f4">
-                <a class="btn btn-success" href="/posts/{{$post->id}}/edit/" role="button" >Ubah Post</a>
-                <br>
-                <br>
+
                 <h1>{{$post->title}}</h1>
-                <small>Dibagikan tanggal {{$post->created_at}}</small>
+                <small>Dibagikan tanggal {{$post->created_at}}</small>        
+                <div>
+                    <div style="display:inline-block">
+                        {!!Form::open(['action'=>['PostsController@destroy',$post->id], 'method'=> 'POST', 'class'=> 'pull-right','style'=>'inline-block'])!!}
+                            {{Form::hidden('_method','DELETE')}}
+                            {{Form::submit('Hapus Berita',['class'=>'btn btn-danger'])}}
+                        {!!Form::close()!!}   
+                    </div>                       
+                    <a class="btn btn-success" href="/posts/{{$post->id}}/edit/" role="button" style="display:inline-block" >Ubah Berita</a>
+                </div>
                 <hr>
                 <p>{!!$post->body!!}</p>
             </div>
