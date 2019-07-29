@@ -50,6 +50,7 @@
     <main>
         <section id="section-berita" style="padding-bottom: 0">
             <div class="container" style="min-height: 100vh; padding-top: 10vh; background: #f4f4f4">
+                <a href="/posts/{{$post->id}}/edit">Edit Post</a>
                 <h1>{{$post->title}}</h1>
                 <small>Dibagikan tanggal {{$post->created_at}}</small>
                 <hr>
