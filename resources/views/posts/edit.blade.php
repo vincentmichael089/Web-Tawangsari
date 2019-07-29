@@ -10,7 +10,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800'
         rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}" >
 </head>
 
 <body>
@@ -50,7 +50,7 @@
     <main>
         <section id="section-tambah-berita" style="padding-bottom: 0;">
             <div class="container" style="min-height: 100vh; padding-top: 10vh; background: #f4f4f4;">
-                <h1>Tambah Berita Baru</h1>
+                <h1>Ubah Berita</h1>
                 <br>
                 @include('inc.messages')
                     {{ Form::open(['action' => ['PostsController@update',$post->id], 'method'=>'POST']) }}
