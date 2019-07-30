@@ -25,3 +25,7 @@ Route::resource('posts','PostsController');
 Route::resource('coordinates','CoordinatesController');
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

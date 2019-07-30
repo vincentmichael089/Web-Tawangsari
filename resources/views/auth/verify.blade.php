@@ -2,11 +2,15 @@
 <html lang="en">
 
 <head>
+    <!--❤wml❤-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{$title}}</title>
-    <!--❤wml❤-->
+    <title>Verify</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800'
@@ -20,76 +24,64 @@
         crossorigin=""></script>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-
-</head>
-
 <body>
+    <!--HEADER-->
     <header>
-        <div id="bg-image"></div>
-        <div class="container">
-            <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-                <div class="container">
-                    <a class="navbar-brand" href="#"><img src="/res/branding-01.png" style="max-height: 35px"
-                            alt=""></a>
-                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-                        data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="navbar-collapse collapse align-middle" id="navbarCollapse" style="">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="/">Beranda</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="/posts">Berita</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="/coordinates">Peta Potensi</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link js-scroll-trigger" href="#">Login </a>
-                            </li>
-                        </ul>
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+                    <div class="container">
+                        <a class="navbar-brand" href="#"><img src="/res/branding-01.png" style="max-height: 35px"
+                                alt=""></a>
+                        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                            data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="navbar-collapse collapse align-middle" id="navbarCollapse" style="">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link js-scroll-trigger" href="/">Beranda</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link js-scroll-trigger" href="/posts">Berita</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link js-scroll-trigger" href="/coordinates">Peta Potensi</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link js-scroll-trigger" href="/#">Login </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <!--SECTION LOGIN-->
-        <section id="section-login">
-            <div class="bg-image"></div>
-            <div class="container center image-wrapper">
-              <div class="shadow-lg p-3 mb-5 bg-white card-login landing-word">
-                <form class="form-signin">
-                  <h1 class="green h3 mb-3 font-weight-normal text-center">Masuk</h1>
-                  <label class="text-center">Username:</label>
-                  <input type="email" id="inputEmail" class="form-control" placeholder="Username" required autofocus>
-                      <br>
-                  <label class="text-center">Password:</label>
-                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                  <div class="checkbox mb-3">
-                    <label>
-                      <input class="text-center" type="checkbox" value="remember-me"> Remember me
-                    </label>
-                  </div>
-                </form>
-                <button class="btn btn-lg btn-primary btn-block" id="btnSignIn">
-                  <span id="spanSignIn">Masuk</span>
-                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="vertical-align:middle"></span>
-                  <span>Loading...</span>
-                </button>
-                <br>
-
-              </div>
+                </nav>
             </div>
-            <!-- alert -->
-              <div class="alert alert-danger" role="alert" id="alertSignIn"></div>
-        </section>
-    </main>
-    <!--FOOTER-->
-    <footer>
+        </header>
+<!--MAIN-->
+<main>
+<div class="container" style="min-height: 100vh; padding-top:25vh">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">{{ __('Verify Your Email Address') }}</div>
+
+                <div class="card-body">
+                    @if (session('resent'))
+                        <div class="alert alert-success" role="alert">
+                            {{ __('A fresh verification link has been sent to your email address.') }}
+                        </div>
+                    @endif
+
+                    {{ __('Before proceeding, please check your email for a verification link.') }}
+                    {{ __('If you did not receive the email') }}, <a href="{{ route('verification.resend') }}">{{ __('click here to request another') }}</a>.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+<!--FOOTER-->
+<footer>
         <div class="container">
             <div class="row justify-content-center">
                 <!---  SECTION ABOUT --->
@@ -126,6 +118,8 @@
         </div>
     </footer>
 
+    <script src='../js/cred.js'></script>
+    <script src="../js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -133,8 +127,8 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"
         integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp"
-        crossorigin="anonymous"></script>
-    <script src="../js/signin.js"></script>
+        ossorigin="anonymous"></script>
 </body>
-
 </html>
+
+
