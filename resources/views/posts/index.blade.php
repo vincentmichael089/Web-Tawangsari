@@ -78,7 +78,6 @@
     <main>
         <section id="section-berita" style="padding-bottom: 0">
             <div class="container" style="min-height: 100vh; padding-top: 5vh; padding-bottom: 5vh;">
-                <a class="btn btn-success" href="/posts/create/" role="button" style="margin: 12px">Buat Post Baru</a>
                 @include('inc.messages')
                 @if(count($posts)>0)
                     @foreach ($posts as $post)

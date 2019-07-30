@@ -97,8 +97,8 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    You are logged in!
+                            
+                    <a class="btn btn-success" href="/posts/create/" role="button" style="margin: 12px">Tulis Berita Baru</a>
                 </div>
             </div>
         </div>
