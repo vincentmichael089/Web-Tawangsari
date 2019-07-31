@@ -100,6 +100,30 @@
                     @endif
                             
                     <a class="btn btn-success" href="/posts/create/" role="button" style="margin: 12px">Tulis Berita Baru</a>
+                    <h3>Berita Anda</h3>
+                    @if (count($posts)>0)
+                    <table class="table table-striped">
+                            <tr>
+                                <th>Judul Berita</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            @foreach ($posts as $post)
+                                <tr>
+                                    <th>{{$post->title}}</th>
+                                    <th><a href="/posts/{{$post->id}}/edit" class="btn btn-success">Ubah Berita</a></th>
+                                    <th>
+                                        {!!Form::open(['action'=>['PostsController@destroy',$post->id], 'method'=> 'POST', 'class'=> 'pull-right','style'=>'inline-block'])!!}
+                                            {{Form::hidden('_method','DELETE')}}
+                                            {{Form::submit('Hapus Berita',['class'=>'btn btn-danger'])}}
+                                        {!!Form::close()!!}   
+                                    </th>
+                                </tr>                       
+                            @endforeach
+                        </table>
+                    @else
+                        <p>Belum ada Berita</p>
+                    @endif
                 </div>
             </div>
         </div>

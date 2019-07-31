@@ -93,7 +93,7 @@
                                         <div class="col-md-8">
                                             <div class="berita-content">
                                                 <h1>{{$post->title}}</h1>
-                                                <small>Dibagikan tanggal {{$post->created_at}}</small>
+                                            <small>Dibagikan tanggal {{$post->created_at}} oleh {{$post->user->name}}</small>
                                             </div>
                                         </div>
                                 </div>
