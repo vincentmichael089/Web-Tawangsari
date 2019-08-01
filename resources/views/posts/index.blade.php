@@ -86,8 +86,8 @@
                            <div class="box">
                                 <div class="row">
                                         <div class="col-md-4" style="max-height:200px;">
-                                            <div class="berita-pic">
-                                                <img id="poly-map" class="berita-pic-pic" src="../res/poly-map.svg" alt="" srcset="">
+                                            <div>
+                                            <img src="/storage/cover_images/{{$post->cover_image}}" style="width:100%">
                                             </div>
                                         </div>
                                         <div class="col-md-8">

@@ -59,9 +59,9 @@ class PostsController extends Controller
 
         //upload handler
         if($request->hasFile('cover_image')){
-            $fileNameWithExt = $request->file('cover_image')->getClientOriginalImage();
+            $fileNameWithExt = $request->file('cover_image')->getClientOriginalName();
             $fileName =  pathinfo($fileNameWithExt, PATHINFO_FILENAME);
-            $extension =  $request->file('cover_image')->getOriginalClientExtension();
+            $extension =  $request->file('cover_image')->getClientOriginalExtension();
             $fileNameToStore = $fileName.'_'.time().'.'.$extension;
 
             $path = $request -> file('cover_image')->storeAs('public/cover_images',$fileNameToStore);
@@ -73,7 +73,7 @@ class PostsController extends Controller
         $post->title = $request->input('title');
         $post->body = $request->input('body');
         $post->user_id = auth()->user()->id;
-        $post->cover_image = 
+        $post->cover_image = $fileNameToStore;
         $post->save();
 
         return redirect('/posts')->with('success','Berita telah ditambahkan!');

@@ -83,6 +83,7 @@
                 <h1>{{$post->title}}</h1>
                 <small>Dibagikan pada {{$post->created_at}} oleh: {{$post->user->name}}</small>       
                 <br>
+                <img src="/storage/cover_images/{{$post->cover_image}}" style="width:100%">
               @if (!Auth::guest())
               <div style="display:flex">
                    
@@ -94,9 +95,10 @@
                     </div>
               @endif
             
-               <hr>
+               <br><br>
                <p>{!!$post->body!!}</p>
                                
+               <hr>
            
             </div>
         </section>

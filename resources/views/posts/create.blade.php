@@ -82,7 +82,7 @@
                 <h1>Tambah Berita Baru</h1>
                 <br>
                 @include('inc.messages')
-                    {{ Form::open(['action' => 'PostsController@store', 'method'=>'POST', 'enctype' => 'multipart/data']) }}
+                    {{ Form::open(['action' => 'PostsController@store', 'method'=>'POST', 'enctype' => 'multipart/form-data']) }}
                         <div class="form-group">
                             {{Form::label('title','Judul Berita')}}
                             {{Form::text('title','',['class'=>'form-control', 'placeholder'=>'Judul Berita'])}}
