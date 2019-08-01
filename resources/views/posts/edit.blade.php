@@ -82,7 +82,7 @@
                 <h1>Ubah Berita</h1>
                 <br>
                 @include('inc.messages')
-                    {{ Form::open(['action' => ['PostsController@update',$post->id], 'method'=>'POST']) }}
+                    {{ Form::open(['action' => ['PostsController@update',$post->id], 'method'=>'POST', 'enctype'=>'multipart/form-data']) }}
                     <div class="form-group">
                         {{Form::label('title','Judul Berita')}}
                         {{Form::text('title',$post->title,['class'=>'form-control', 'placeholder'=>'Judul Berita'])}}
@@ -92,8 +92,12 @@
                             {{Form::label('body','Isi Berita')}}
                             {{Form::textArea('body',$post->body,['id'=>'article-ckeditor','class'=>'form-control', 'placeholder'=>'Isi Berita'])}}
                         </div>
+                        <div class="form-group">
+                                {{Form::file('cover_image')}}
+                            </div>
                         {{Form::hidden('_method','PUT')}}
                         {{Form::submit('Submit',['class'=>'btn btn-primary'])}}
+                      
                 {{ Form::close() }}
             </div>
         </section>

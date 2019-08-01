@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use App\Post;
+
 
 class PostsController extends Controller
 {
@@ -117,12 +119,27 @@ class PostsController extends Controller
         //
         $this->validate($request,[
             'title'=>'required',
-            'body'=> 'required'
+            'body'=> 'required',
+            
         ]);
+
+         //upload handler
+         if($request->hasFile('cover_image')){
+            $fileNameWithExt = $request->file('cover_image')->getClientOriginalName();
+            $fileName =  pathinfo($fileNameWithExt, PATHINFO_FILENAME);
+            $extension =  $request->file('cover_image')->getClientOriginalExtension();
+            $fileNameToStore = $fileName.'_'.time().'.'.$extension;
+
+            $path = $request -> file('cover_image')->storeAs('public/cover_images',$fileNameToStore);
+        }
 
         $post = Post::find($id);
         $post->title = $request->input('title');
         $post->body = $request->input('body');
+        
+        if($request->hasFile('cover_image')){
+            $post->cover_image = $fileNameToStore;
+        }
         $post->save();
 
         return redirect('/posts')->with('success','Berita telah diubah!');
@@ -138,6 +155,11 @@ class PostsController extends Controller
     {
         //
         $post=Post::find($id);
+
+        if($post->cover_image != 'noImage.jpg'){
+            Storage::delete('public/cover_images/'.$post->cover_image);
+        }
+
         $post->delete();
         return redirect('/posts')->with('success','Berita telah dihapus!');
     }
