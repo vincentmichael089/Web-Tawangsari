@@ -81,9 +81,23 @@
             <div class="container" style="min-height: 100vh; padding-top: 10vh; background: #f4f4f4">
 
                 <h1>{{$post->title}}</h1>
-                <small>Dibagikan pada {{$post->created_at}} oleh: {{$post->user->name}}</small>        
-                <hr>
-                <p>{!!$post->body!!}</p>
+                <small>Dibagikan pada {{$post->created_at}} oleh: {{$post->user->name}}</small>       
+                <br>
+              @if (!Auth::guest())
+              <div style="display:flex">
+                   
+                    <a href="/posts/{{$post->id}}/edit" class="btn btn-success" style="margin-right: 4px" >Ubah</a>
+                       {!!Form::open(['action'=>['PostsController@destroy',$post->id], 'method'=> 'POST', 'class'=> 'pull-right','style'=>'inline-block'])!!}
+                            {{Form::hidden('_method','DELETE')}}
+                            {{Form::submit('Hapus',['class'=>'btn btn-danger'])}}
+                        {!!Form::close()!!}
+                    </div>
+              @endif
+            
+               <hr>
+               <p>{!!$post->body!!}</p>
+                               
+           
             </div>
         </section>
     </main>

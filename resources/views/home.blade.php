@@ -110,12 +110,12 @@
                             </tr>
                             @foreach ($posts as $post)
                                 <tr>
-                                    <th>{{$post->title}}</th>
-                                    <th><a href="/posts/{{$post->id}}/edit" class="btn btn-success">Ubah Berita</a></th>
+                                    <th><a href="/posts/{{$post->id}}">{{$post->title}}</a></th>
+                                    <th><a href="/posts/{{$post->id}}/edit" class="btn btn-success">Ubah</a></th>
                                     <th>
                                         {!!Form::open(['action'=>['PostsController@destroy',$post->id], 'method'=> 'POST', 'class'=> 'pull-right','style'=>'inline-block'])!!}
                                             {{Form::hidden('_method','DELETE')}}
-                                            {{Form::submit('Hapus Berita',['class'=>'btn btn-danger'])}}
+                                            {{Form::submit('Hapus',['class'=>'btn btn-danger'])}}
                                         {!!Form::close()!!}   
                                     </th>
                                 </tr>                       
