@@ -111,9 +111,7 @@
         <section style="min-height: 200vh"></section>
     </main>
     <!--FOOTER-->
-<button class="scroll-top" id="btn-up" data-scroll="up" type="button">
-        <i class="fa fa-chevron-up"></i>
-    </button>
+
     <footer>
         <div class="container">
             <div class="row justify-content-center">
@@ -159,7 +157,9 @@
         integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp"
         crossorigin="anonymous"></script>
 <script src="{{asset('js/berita.js')}}"></script>
-       
+<button class="scroll-top" id="btn-up" data-scroll="up" type="button">
+        <i class="fa fa-chevron-up"></i>
+    </button>
 </body>
 
 </html>
