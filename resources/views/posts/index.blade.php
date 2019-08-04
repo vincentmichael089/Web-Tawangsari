@@ -23,8 +23,8 @@
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-dark fixed-top">
                 <div class="container">
-                    <a class="navbar-brand" href="#"><img src="/res/branding-01.png" style="max-height: 35px"
-                            alt=""></a>
+                        <a class="navbar-brand" href="#"><img src="{{asset('res/l_kkntawangsari.png')}}" style="max-height:30px"
+                            alt=""> <b> Desa Tawangsari</b></a>
                     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
                         data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                         aria-label="Toggle navigation">

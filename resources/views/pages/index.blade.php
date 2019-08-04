@@ -33,8 +33,8 @@
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-dark fixed-top">
                 <div class="container">
-                    <a class="navbar-brand" href="#"><img src="/res/branding-01.png" style="max-height: 35px"
-                            alt=""></a>
+                    <a class="navbar-brand" href="#"><img src="{{asset('res/l_kkntawangsari.png')}}" style="max-height:30px"
+                            alt=""> <b> Desa Tawangsari</b></a>
                     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
                         data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -95,7 +95,7 @@
         <section id="section-landing" class="body-section">
             <div class="container center image-wrapper">
                 <h1 id="landing-word">
-                    <span class="">Selamat datang di website Desa Tawangsari </span>
+                    <span class=""><b>Selamat Datang di Website Desa Tawangsari</b> </span>
                 </h1>
             </div>
 
