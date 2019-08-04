@@ -1,5 +1,5 @@
 
-var mymap = L.map('mapid2').setView([-7.7093349, 110.1173872], 17);
+var mymap = L.map('mapid2').setView([-7.7093349, 110.1173872], 16);
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
@@ -11,3 +11,25 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 var marker = L.marker([-7.7093349, 110.1173872]).addTo(mymap);
 marker.bindPopup("<b>Desa Tawangsari</b>").openPopup();
 
+L.marker([-7.71710663, 110.12001473]).addTo(mymap);
+L.marker([-7.71716471, 110.12011643]).addTo(mymap);
+L.marker([-7.71677695, 110.12044616]).addTo(mymap);
+L.marker([-7.71675364, 110.12043792]).addTo(mymap);
+L.marker([-7.71676684, 110.12048479]).addTo(mymap);
+L.marker([-7.71631746, 110.1211921]).addTo(mymap);
+L.marker([-7.71654485, 110.12040343]).addTo(mymap);
+L.marker([-7.71637918, 110.1203868]).addTo(mymap);
+L.marker([-7.71602208, 110.1203424]).addTo(mymap);
+L.marker([-7.71606185, 110.11970731]).addTo(mymap);
+L.marker([-7.7163106, 110.11978147]).addTo(mymap);
+L.marker([-7.71655426, 110.12005873]).addTo(mymap);
+L.marker([-7.71664472, 110.12011091]).addTo(mymap);
+L.marker([-7.71642348, 110.12025007]).addTo(mymap);
+L.marker([-7.71668957, 110.11956163]).addTo(mymap);
+L.marker([-7.71684155, 110.11963015]).addTo(mymap);
+
+L.marker([-7.71681832, 110.12230305]).addTo(mymap);
+L.marker([-7.71682513, 110.1219562]).addTo(mymap);
+L.marker([-7.71641413, 110.12228733]).addTo(mymap);
+L.marker([-7.71657013, 110.1219608]).addTo(mymap);
+L.marker([-7.7161629, 110.12066938]).addTo(mymap);
