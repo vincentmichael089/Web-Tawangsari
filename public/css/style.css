@@ -227,6 +227,41 @@ footer{
     background: red; 
   }
 
+  .scroll-top {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+    text-decoration: none;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background: #00cf52;
+    background: rgba(0, 198, 144, 0.7);
+    border: 0;    
+  }
+
+  .scroll-top:focus{
+    outline: #FDB302;
+  }
+
+  .scroll-top i {
+    display: inline-block;
+    color: #fff;
+    font-size: 19px;
+  }
+
+
+.scroll-top:hover{
+    background: #00c690;
+}
+
+.scroll-top:hover i{
+    top: 5px;
+}
+
 @media(max-width: 800px){
   .footer-section{
     margin-top: 10px;

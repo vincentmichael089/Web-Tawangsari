@@ -12,7 +12,9 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800'
         rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="{{asset('css/style.css') }}">
 </head>
 
 <body>
@@ -106,8 +108,12 @@
                 @endif
             </div>
         </section>
+        <section style="min-height: 200vh"></section>
     </main>
     <!--FOOTER-->
+<button class="scroll-top" id="btn-up" data-scroll="up" type="button">
+        <i class="fa fa-chevron-up"></i>
+    </button>
     <footer>
         <div class="container">
             <div class="row justify-content-center">
@@ -152,6 +158,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"
         integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp"
         crossorigin="anonymous"></script>
+<script src="{{asset('js/berita.js')}}"></script>
+       
 </body>
 
 </html>
