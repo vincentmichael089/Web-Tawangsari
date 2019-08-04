@@ -57,3 +57,17 @@ L.marker([-7.7032837, 110.1292127]).addTo(mymap);
 L.marker([-7.70353627, 110.12926118]).addTo(mymap);
 L.marker([-7.70355182, 110.12948238]).addTo(mymap);
 L.marker([-7.70379998, 110.12883523]).addTo(mymap);
+
+L.marker([-7.70697501, 110.12937791]).addTo(mymap);
+L.marker([-7.70696208, 110.12997068]).addTo(mymap);
+L.marker([-7.70717083, 110.12951858]).addTo(mymap);
+L.marker([-7.70653391, 110.13011348]).addTo(mymap);
+L.marker([-7.7058524, 110.13021159]).addTo(mymap);
+L.marker([-7.70443195, 110.12913297]).addTo(mymap);
+L.marker([-7.70388921, 110.12898493]).addTo(mymap);
+L.marker([-7.70396671, 110.1284905]).addTo(mymap);
+L.marker([-7.70409775, 110.12862129]).addTo(mymap);
+L.marker([-7.70369763, 110.12826209]).addTo(mymap);
+L.marker([-7.70292371, 110.12768656]).addTo(mymap);
+L.marker([-7.70304144, 110.1274337]).addTo(mymap);
+L.marker([-7.7024055, 110.12828146]).addTo(mymap);
