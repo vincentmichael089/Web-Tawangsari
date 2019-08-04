@@ -144,3 +144,10 @@ L.marker([-7.71604243, 110.12368306]).addTo(mymap);
 L.marker([-7.71609406, 110.123493]).addTo(mymap);
 L.marker([-7.71626254, 110.12349432]).addTo(mymap);
 
+L.marker([-7.7154985, 110.12514347]).addTo(mymap);
+L.marker([-7.71599612, 110.12569885]).addTo(mymap);
+L.marker([-7.71617657, 110.12580962]).addTo(mymap);
+L.marker([-7.71619533, 110.12603522]).addTo(mymap);
+L.marker([-7.71565338, 110.12599085]).addTo(mymap);
+L.marker([-7.71563856, 110.12599378]).addTo(mymap);
+
