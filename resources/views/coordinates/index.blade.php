@@ -15,7 +15,7 @@
     <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800'
         rel='stylesheet' type='text/css'>
         
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
         integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
         crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
@@ -90,20 +90,8 @@
 
         <!--SECTION PETA-->
         <section id="section-landing" class="body-section" style="padding-bottom: 0">
-                <div id="mapid" style="height: 100%"></div>
-                <script>
-                    var mymap = L.map('mapid').setView([-7.7093349, 110.1173872], 17);
-                    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-                        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-                        maxZoom: 18,
-                        id: 'mapbox.satellite',
-                        accessToken: 'pk.eyJ1IjoidmluY2VudG1pY2hhZWwwODkiLCJhIjoiY2p5MTkyNnVkMGJoYzNoczdiMjV4MjQ4cCJ9.sqz82kpQdSi0_h3jFXjskg'
-                        //center: [4.899, 52.372]
-                    }).addTo(mymap);
-                    var marker = L.marker([-7.7093349, 110.1173872]).addTo(mymap);
-                    marker.bindPopup("<b>Desa Tawangsari</b>").openPopup();
-
-                </script>
+                <div id="mapid2" style="height: 100%"></div>
+               
         </section>
     </main>
     <!--FOOTER-->
@@ -144,7 +132,7 @@
         </div>
     </footer>
     <script src='../js/cred.js'></script>
-    <script src="../js/potensi.js"></script>
+   
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -153,16 +141,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"
         integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp"
         crossorigin="anonymous"></script>
+        <script src="../js/potensi.js"></script>
 
-    @if(count($coordinates) > 0)
-        @foreach ($coordinates as $coordinate)
-            <script>
-                var marker = L.marker([{{$coordinate->lat}}, {{$coordinate->long}}]).addTo(mymap);
-            </script>
-        @endforeach
-    @else
-        <p>No posts found!</p>
-    @endif
 </body>
 
 </html>

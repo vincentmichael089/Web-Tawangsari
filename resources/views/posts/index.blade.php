@@ -108,7 +108,6 @@
                 @endif
             </div>
         </section>
-        <section style="min-height: 200vh"></section>
     </main>
     <!--FOOTER-->
 
