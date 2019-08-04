@@ -22,7 +22,8 @@
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
         integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
         crossorigin=""></script>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="{{asset('css/style.css') }}">
+    
 </head>
 
 <body>
@@ -94,7 +95,7 @@
         <section id="section-landing" class="body-section">
             <div class="container center image-wrapper">
                 <h1 id="landing-word">
-                    <span>Selamat datang di website Desa Tawangsari </span>
+                    <span class="">Selamat datang di website Desa Tawangsari </span>
                 </h1>
             </div>
 
@@ -111,24 +112,23 @@
                     <div class="col-md-4">
                         <img id="poly-map" class="section-content" src="../res/poly-map.svg" alt="" srcset="">
                     </div>
-                    <div class="col-md-8">
-                        <p class="section-content">
-                            <h4>Desa Tawangsari</h4> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
-                            harum? Culpa aut reiciendis non consequuntur minus, quisquam optio accusamus libero suscipit
-                            nihil iure praesentium maxime illo, vel id adipisci possimus.
+                    <div class="col-lg-8">
+                        <p class="section-content lead">
+                            <span class="desa-tawangsari">Desa Tawangsari</span>  termasuk ke dalam Kecamatan Kaligesing, Kabupaten Purworejo, provinsi Jawa Tengah. Desa ini terdiri atas tiga dusun, yaitu
+                            Dusun Wonogiri, Dusun Ketawang, dan Dusun Bulu. 
                         </p>
                         <br>
                         <div class="row counters">
                             <div class="col-md-4 text-center" style="padding-bottom: 1em">
-                                <span data-toggle="counter-up">195.52</span>
+                                <span class="counter">195.52</span>
                                 <p>km<sup>2</sup> Luas Wilayah Desa</p>
                             </div>
                             <div class="col-md-4 text-center" style="padding-bottom: 1em">
-                                <span data-toggle="counter-up">1,100</span>
+                                <span class="counter">1,100</span>
                                 <p>Jumlah Penduduk</p>
                             </div>
                             <div class="col-md-4 text-center" style="padding-bottom: 1em">
-                                <span data-toggle="counter-up">3</span>
+                                <span class="counter">3</span>
                                 <p>Produk Hasil Bumi Unggulan</p>
                             </div>
                         </div>
@@ -150,21 +150,21 @@
                     <div class="col-lg-4">
                         <div class="box">
                             <h4>Kambing Kaligesing</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae itaque quas iusto
+                            <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae itaque quas iusto
                                 eligendi rem porro exercitationem nostrum commodi corporis dolorum.</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="box">
                             <h4>Cengkeh</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae itaque quas iusto
+                            <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae itaque quas iusto
                                 eligendi rem porro exercitationem nostrum commodi corporis dolorum.</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="box">
                             <h4>Kopi</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae itaque quas iusto
+                            <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae itaque quas iusto
                                 eligendi rem porro exercitationem nostrum commodi corporis dolorum.</p>
                         </div>
                     </div>
@@ -184,7 +184,7 @@
                         </div>
                         <div class="col-lg-8">
                             <h4 style="text-align: center">Mliwis Hill, Lorem ipsum dolor sit amet.</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque fuga corporis nemo porro
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque fuga corporis nemo porro
                                 error eius? Delectus, molestias maiores quisquam pariatur sapiente, dolorum molestiae
                                 tenetur rem quia consectetur perferendis sequi omnis!
 
@@ -209,14 +209,7 @@
                         </div>
                         <div class="col-md-6">
                             <br>
-                            <h4> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                Ea, enim.
-                            </h4>
-                            <br>
-                            <p> Desa Tawangsari berjarak x dari y, z dari a, ......... dan dapat diakses
-                                dengan kendaraan roda 2 maupun roda 4. Lorem ipsum, dolor sit amet consectetur
-                                adipisicing
-                                elit. Cum, aliquid!</p>
+                            <p class="lead"><span class="desa-tawangsari"> Desa Tawangsari</span> berjarak kurang lebih 8 kilometer dari pusat Kecamatan Kaligesing, berjarak kurang lebih 16 kilometer dari pusat Kabupaten Purworejo, dan terletak di perbatasan Provinsi Jawa Tengah - Daerah Istimewa Yogyakarta.</p>
                             <br>
                             <div class="text-center">
                                 <button type="button" class="btn btn-success text-center"
@@ -241,8 +234,7 @@
                             <img src="/res/logo-hz.svg" width="295px">
                         </p>
                         <p class="text">
-                            Website Desa ini dibuat oleh Unit KKN-PPM Universitas Gadjah Mada 2019 Kecamatan Kaligesing
-                            untuk Desa Tawangsari.</p>
+                            Website Desa Tawangsari dibuat oleh Unit KKN-PPM Universitas Gadjah Mada 2019 Kecamatan Kaligesing.</p>
                     </div>
                 </div>
 
@@ -267,9 +259,7 @@
             <p>Desa Tawangsari, Kecamatan Kaligesing, Kabupaten Purworejo</p>
         </div>
     </footer>
-
-    <script src='../js/cred.js'></script>
-    <script src="../js/index.js"></script>
+    
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -278,6 +268,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"
         integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp"
         crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+    <script src="{{asset("js/index.js")}}"></script>
+
 </body>
 
 </html>

@@ -9,3 +9,5 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 
 var marker = L.marker([-7.7093349, 110.1173872]).addTo(mymap);
 marker.bindPopup("<b>Desa Tawangsari</b>").openPopup();
+
+$(".counter").counterUp({delay:10, time:700});

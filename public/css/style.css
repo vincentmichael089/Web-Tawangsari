@@ -10,6 +10,19 @@
     z-index: -1;
 }
 
+.desa-tawangsari{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    border-left: 2px solid orangered;
+    padding-left: 10px;
+}
+
+.left-border{
+    border-left: 2px solid orangered;
+    padding-left: 10px;
+}
+
 #section-berita{
     background: linear-gradient(#f4f4f4,#b6e9d9 80%,#00df96);
 }
@@ -228,3 +241,4 @@ footer{
     max-height: 300px;
 }
 }
+
