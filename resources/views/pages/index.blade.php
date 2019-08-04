@@ -106,7 +106,7 @@
         <section id="section-profilsingkat" class="body-section center">
             <div class="container">
                 <div>
-                    <h1 class="text-center"><span class="section-header">Profil Singkat</span></h1>
+                    <h1 class="text-center"><span class="section-header"><b>Profil Singkat</b></span></h1>
                 </div>
                 <div class="row center">
                     <div class="col-md-4">
@@ -141,7 +141,7 @@
         <section id="section-potensi" class="body-section center">
             <div class="container">
                 <div>
-                    <h1 class="text-center"><span class="section-header">Hasil Bumi</span></h1>
+                    <h1 class="text-center"><span class="section-header"><b>Hasil Bumi</b></span></h1>
 
                     <h4 style="text-align: center">Hasil peternakan dan perkebunan Desa Tawangsari</h4>
                     <br>
@@ -176,13 +176,13 @@
         <section id="section-wisata" class="body-section center">
             <div class="container">
                 <div>
-                    <h1 class="text-center"><span class="section-header">Wisata Tawangsari</span></h1>
+                    <h1 class="text-center"><span class="section-header"><b>Wisata Tawangsari</b></span></h1>
                     <br>
                     <div class="row">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 center">
                             <img id="poly-map" class="section-content" src="../res/mliwis-hill-01.png" alt="" srcset="">
                         </div>
-                        <div class="col-lg-8">
+                        <div class="col-lg-8" style="padding-top: 4em">
                             <h4 style="text-align: center">Mliwis Hill, Lorem ipsum dolor sit amet.</h4>
                             <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque fuga corporis nemo porro
                                 error eius? Delectus, molestias maiores quisquam pariatur sapiente, dolorum molestiae
@@ -200,7 +200,7 @@
 
             <div class="container">
                 <div>
-                    <h1 class="text-center"><span class="section-header">Lokasi Desa Tawangsari</span></h1>
+                    <h1 class="text-center"><span class="section-header"><b>Lokasi Desa Tawangsari</b></span></h1>
 
                     <br>
                     <div class="row">
@@ -231,9 +231,14 @@
                 <!---  SECTION ABOUT --->
                 <div class="col-md footer-section">
                     <div id="footer-section-about">
-                        <p>
-                            <img src="/res/logo-hz.svg" width="295px">
-                        </p>
+                        <div style="display:flex">
+                            <div style="padding-right: 10px; padding-bottom: 20px">
+                                <img src="{{asset('res/l_purworedjo.png')}}" alt="" srcset="" style="max-height:110px">
+                            </div>
+                            <div style="padding-left: 10px; padding-bottom: 20px">
+                                <img src="{{asset('res/l_kkntawangsari.png')}}" alt="" srcset=""style="max-height:100px">
+                            </div>
+                        </div>
                         <p class="text">
                             Website Desa Tawangsari dibuat oleh Unit KKN-PPM Universitas Gadjah Mada 2019 Kecamatan Kaligesing.</p>
                     </div>

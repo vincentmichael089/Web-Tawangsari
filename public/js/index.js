@@ -1,4 +1,4 @@
-var mymap = L.map('mapid').setView([-7.7093349, 110.1173872], 14);
+var mymap = L.map('mapid').setView([-7.708665234920596, 110.12553572323668], 14);
 
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -7,7 +7,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
     accessToken: 'pk.eyJ1IjoidmluY2VudG1pY2hhZWwwODkiLCJhIjoiY2p5MTkyNnVkMGJoYzNoczdiMjV4MjQ4cCJ9.sqz82kpQdSi0_h3jFXjskg'
 }).addTo(mymap);
 
-var marker = L.marker([-7.7093349, 110.1173872]).addTo(mymap);
+var marker = L.marker([-7.708665234920596, 110.12553572323668]).addTo(mymap);
 marker.bindPopup("<b>Desa Tawangsari</b>").openPopup();
 
 
