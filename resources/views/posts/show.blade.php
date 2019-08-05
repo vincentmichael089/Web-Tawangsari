@@ -82,29 +82,34 @@
     <!--MAIN-->
     <main>
         <section id="section-berita" style="padding-bottom: 0">
-            <div class="container" style="min-height: 100vh; padding-top: 10vh; background: #f4f4f4">
+            <div class="container" style="min-height: 100vh;">
+<div style=" background: #f4f4f4; padding-left: 4em; padding-right: 4em; padding-top: 10vh; padding-bottom: 10vh">
+    @if (!Auth::guest())
+    <div style="display:flex">
+         
+          <a href="/posts/{{$post->id}}/edit" class="btn btn-success" style="margin-right: 4px" >Ubah</a>
+             {!!Form::open(['action'=>['PostsController@destroy',$post->id], 'method'=> 'POST', 'class'=> 'pull-right','style'=>'inline-block'])!!}
+                  {{Form::hidden('_method','DELETE')}}
+                  {{Form::submit('Hapus',['class'=>'btn btn-danger'])}}
+              {!!Form::close()!!}
+          </div>
+    @endif
+  
+    <h1>{{$post->title}}</h1>
+    <small>Dibagikan pada {{$post->created_at}} oleh: {{$post->user->name}}</small>       
+    <br>
+    <br>
+   <div class="center">
+    <img src="/storage/cover_images/{{$post->cover_image}}" style="width:70vh">
+   </div>
 
-                <h1>{{$post->title}}</h1>
-                <small>Dibagikan pada {{$post->created_at}} oleh: {{$post->user->name}}</small>       
-                <br>
-                <img src="/storage/cover_images/{{$post->cover_image}}" style="width:100%">
-              @if (!Auth::guest())
-              <div style="display:flex">
+   <br><br>
+   <p>{!!$post->body!!}</p>
                    
-                    <a href="/posts/{{$post->id}}/edit" class="btn btn-success" style="margin-right: 4px" >Ubah</a>
-                       {!!Form::open(['action'=>['PostsController@destroy',$post->id], 'method'=> 'POST', 'class'=> 'pull-right','style'=>'inline-block'])!!}
-                            {{Form::hidden('_method','DELETE')}}
-                            {{Form::submit('Hapus',['class'=>'btn btn-danger'])}}
-                        {!!Form::close()!!}
-                    </div>
-              @endif
-            
-               <br><br>
-               <p>{!!$post->body!!}</p>
-                               
-               <hr>
-           
-            </div>
+   <hr>
+
+</div></div>
+              
         </section>
     </main>
     <!--FOOTER-->

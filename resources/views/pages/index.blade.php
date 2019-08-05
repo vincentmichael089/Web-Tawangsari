@@ -187,7 +187,7 @@
                             <img id="poly-map" class="section-content" src="../res/mliwis-hill-01.png" alt="" srcset="" style="border-radius: 8px; padding-top: 0;">
                         </div>
                         <div class="col-lg-8" style="padding-top: 4em">
-                            <h4 style="text-align: center">Mliwis Hill, Lorem ipsum dolor sit amet.</h4>
+                            <h4 style="text-align: center"><span style="color:#032e3e;font-weight: 600; ">Mliwis Hill</span>, Hutan Pinus di Perbukitan.</h4>
                             <p class="lead"><b> Di Desa Tawangsari terdapat sebuah </b><span style="font-weight: 600;">hutan pinus</span><b> yang sudah sangat dikenal
                                 oleh masyarakat dan wisatawan luar daerah dengan nama </b><span style="font-weight: 600;">Mliwis Hill.</span>
                                
@@ -268,7 +268,7 @@
             </div>
         </div>
         <div id="footer-bottom" class="text-center">
-            <p>Desa Tawangsari, Kecamatan Kaligesing, Kabupaten Purworejoa</p>
+            <p>Desa Tawangsari, Kecamatan Kaligesing, Kabupaten Purworejo</p>
         </div>
     </footer>
     
