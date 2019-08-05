@@ -184,7 +184,7 @@
                     <br>
                     <div class="row">
                         <div class="col-lg-4 center">
-                            <img id="poly-map" class="section-content" src="../res/mliwis-hill-01.png" alt="" srcset="">
+                            <img id="poly-map" class="section-content" src="../res/mliwis-hill-01.png" alt="" srcset="" style="border-radius: 8px; padding-top: 0;">
                         </div>
                         <div class="col-lg-8" style="padding-top: 4em">
                             <h4 style="text-align: center">Mliwis Hill, Lorem ipsum dolor sit amet.</h4>
