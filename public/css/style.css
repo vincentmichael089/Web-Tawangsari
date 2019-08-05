@@ -49,7 +49,7 @@
     border-radius: 8px;
     margin: 0 10px 1.5em;
     background: #fff;
-    box-shadow: 0 10px 29px 0 rgba(68,88,144,.1);
+    box-shadow: 0 10px 29px 0 rgba(68,88,144,.1);  
 }
 
 
@@ -276,6 +276,7 @@ footer{
         background: none;
     
     }
+
 }
 
 
