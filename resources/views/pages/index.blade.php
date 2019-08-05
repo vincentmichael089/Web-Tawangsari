@@ -117,7 +117,7 @@
                     </div>
                     <div class="col-lg-8">
                         <p class="section-content lead">
-                            <span class="desa-tawangsari">Desa Tawangsari</span><b>  termasuk ke dalam Kecamatan Kaligesing, Kabupaten Purworejo, provinsi Jawa Tengah. Desa ini terdiri atas tiga dusun, yaitu
+                            <span class="desa-tawangsari">Desa Tawangsari</span><b>  termasuk ke dalam Kecamatan Kaligesing, Kabupaten Purworejo, Provinsi Jawa Tengah. Desa ini terdiri atas tiga dusun, yaitu
                             Dusun Wonogiri, Dusun Ketawang, dan Dusun Bulu. </b>
                         </p>
                         <br>
@@ -155,14 +155,14 @@
                         <div class="box">
                             <h4>Kambing Kaligesing</h4>
                             <br>
-                            <p class="lead"><span style="font-weight:500">Kambing Kaligesing</span> atau biasa disebut juga Kambing Etawa dimanfaatkan oleh masyarakat setempat untuk diternak dan diperah.</p>
+                            <p class="lead"><span style="font-weight:500">Kambing Kaligesing</span> atau biasa disebut sebagai Kambing Etawa dimanfaatkan oleh masyarakat setempat untuk diternak dan diperah.</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="box">
                             <h4>Cengkih</h4>
                             <br>
-                            <p class="lead">Tanaman <span style="font-weight:500">Cengkih</span> yang sering digunakan dalam pembuatan rokok kretek merupakan salah satu komoditas pertanian / perkebunan di Desa Tawangsari. </p>
+                            <p class="lead">Tanaman <span style="font-weight:500">Cengkih</span> yang sering digunakan dalam pembuatan rokok kretek merupakan salah satu komoditas utama perkebunan di Desa Tawangsari. </p>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -187,7 +187,7 @@
                             <img id="poly-map" class="section-content" src="../res/mliwis-hill-01.png" alt="" srcset="" style="border-radius: 8px; padding-top: 0;">
                         </div>
                         <div class="col-lg-8" style="padding-top: 4em">
-                            <h4 style="text-align: center"><span style="color:#032e3e;font-weight: 600; ">Mliwis Hill</span>, Hutan Pinus di Perbukitan.</h4>
+                            <h4 style="text-align: center"><span style="color:#032e3e;font-weight: 600; ">Mliwis Hill</span>, Hutan Pinus Perbukitan.</h4>
                             <p class="lead"><b> Di Desa Tawangsari terdapat sebuah </b><span style="font-weight: 600;">hutan pinus</span><b> yang sudah sangat dikenal
                                 oleh masyarakat dan wisatawan luar daerah dengan nama </b><span style="font-weight: 600;">Mliwis Hill.</span>
                                
