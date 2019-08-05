@@ -16,4 +16,19 @@ jQuery(document).ready(function($) {
         delay: 10,
         time: 700
     });
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          $('.scroll-top').fadeIn();
+        } else {
+          $('.scroll-top').fadeOut();
+        }
+      });
+  
+      $('.scroll-top').click(function () {
+        $("html, body").animate({
+          scrollTop: 0
+        }, 600);
+          return false;
+      });
 });

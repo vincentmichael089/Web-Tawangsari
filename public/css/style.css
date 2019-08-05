@@ -247,8 +247,8 @@ footer{
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
-    background: #76ff03;
-    background: rgba(118,255,3, 0.7);
+    background: #032e3e;
+    background: #032e3ecc;
     border: 0;    
   }
 
@@ -264,7 +264,7 @@ footer{
 
 
 .scroll-top:hover{
-    background: #76ff03;
+    background: #032e3e;
 }
 
 .scroll-top:hover i{
