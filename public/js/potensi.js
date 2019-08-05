@@ -8,6 +8,11 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
     //center: [4.899, 52.372]
 }).addTo(mymap);
 
+//mliwis
+var mliwis = L.marker([-7.710992, 110.127211]).addTo(mymap);
+mliwis.bindPopup("<b>Mliwis Hill</b>").openPopup();
+
+
 var marker = L.marker([-7.708127, 110.125682]).addTo(mymap);
 marker.bindPopup("<b>Desa Tawangsari</b>").openPopup();
 
@@ -151,5 +156,3 @@ L.marker([-7.71619533, 110.12603522]).addTo(mymap);
 L.marker([-7.71565338, 110.12599085]).addTo(mymap);
 L.marker([-7.71563856, 110.12599378]).addTo(mymap);
 
-//mliwis
-L.marker([-7.710992, 110.127211]).addTo(mymap);

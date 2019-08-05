@@ -181,7 +181,7 @@
                             <li><span class="contacts-info-title">Alamat:</span><br>Jl. Kyai Kuasyen no.1, Desa
                                 Tawangsari, Kecamatan
                                 Kaligesing, Kabupaten Purworejo, Jawa Tengah, Indonesia.</li>
-                            <li><span class="contacts-info-title">E-mail:</span><br>email@yahoo.com</li>
+                            <li><span class="contacts-info-title">E-mail:</span><br>tawangsari.kaligesing@gmail.com</li>
                         </ul>
                     </div>
                 </div>
