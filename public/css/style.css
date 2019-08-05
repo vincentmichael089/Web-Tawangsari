@@ -271,6 +271,14 @@ footer{
     top: 5px;
 }
 
+@media(max-width: 1000px){
+    #back-test{
+        background: none;
+    
+    }
+}
+
+
 @media(max-width: 800px){
   .footer-section{
     margin-top: 10px;
@@ -284,10 +292,4 @@ footer{
   #poly-map{
     max-height: 300px;
 }
-
-#back-test{
-    background: none;
-
 }
-}
-
