@@ -80,28 +80,31 @@
     </header>
     <!--MAIN-->
     <main>
-        <section id="section-berita" style="padding-bottom: 0">
-            <div class="container" style="min-height: 100vh; padding-top: 5vh; padding-bottom: 5vh;">
+        <section id="section-berita" style="padding-bottom: 0; ">
+            <div class="container berita-container" style="min-height: 100vh; padding-top: 5vh; padding-bottom: 5vh;  width: 100%;
+            text-align: center;">
                 @include('inc.messages')
                 @if(count($posts)>0)
                     @foreach ($posts as $post)
-                        <a href="/posts/{{$post->id}}">
-                           <div class="box">
+                    <div class="levitate-2 " style=" display: inline-block;">
+                        <a href="/posts/{{$post->id}}" >
+                           <div class="box-berita" style="padding: 0;" >
                                 <div class="row">
-                                        <div class="col-md-4" style="max-height:200px;">
-                                            <div>
-                                            <img src="/storage/cover_images/{{$post->cover_image}}" style="width:100%">
+                                        <div class="col-md-4" style="min-height:150px; ">
+                                            <div style="background: black">
+                                            <img src="/storage/cover_images/{{$post->cover_image}}" style="width:100%; " class="berita-pic">
                                             </div>
                                         </div>
-                                        <div class="col-md-8">
-                                            <div class="berita-content">
-                                                <h1>{{$post->title}}</h1>
+                                        <div class="col-md-8" style="text-align: start;">
+                                            <div class="berita-content" style="padding: 1.5em;">
+                                                <h2>{{$post->title}}</h2>
                                             <small>Dibagikan tanggal {{$post->created_at}} oleh {{$post->user->name}}</small>
                                             </div>
                                         </div>
                                 </div>
                            </div>
-                        </a>
+                        </a></div>
+                        <br><br>
                     @endforeach
                     {{$posts->links()}}
                 @else
