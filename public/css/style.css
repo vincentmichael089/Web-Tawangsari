@@ -19,7 +19,7 @@
 }
 
 .left-border{
-    border-left: 2px solid #00cf52
+    border-left: 2px solid #00cf52;
     padding-left: 10px;
 }
 
@@ -38,7 +38,8 @@
 
 .image-wrapper { position: relative; height: 80vh; } /* height is for display purposes only */
 
-.bottom-image { position: absolute; bottom: 0; }
+#bottom-image { position: absolute; bottom: 0; }
+
 
 
 .box{
@@ -96,6 +97,14 @@ h1,h2,h3,h4, p {
     background: linear-gradient(#b6e9d9 5%,#e4faf8 90%);
     box-shadow: inset 0px 0px 5px #000000;
 }
+
+#back-test{
+    background-image: url(../res/mappy-01.png);
+    background-position: right bottom   ;
+    background-size: 35%;
+    background-repeat: no-repeat;
+}
+
 .counters span {
     font-family: Montserrat,sans-serif;
     font-weight: 700;
@@ -274,6 +283,11 @@ footer{
 }
   #poly-map{
     max-height: 300px;
+}
+
+#back-test{
+    background: none;
+
 }
 }
 

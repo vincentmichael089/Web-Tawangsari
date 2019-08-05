@@ -99,7 +99,7 @@
                 </h1>
             </div>
 
-            <img class="bottom-image" src="../res/section-trans.svg" alt="" style="width: 100vm">
+            <img id="bottom-image" src="../res/section-trans.svg" alt="" style="width: 100vm">
 
         </section>
         <!--SECTION PROFIL-->
@@ -196,8 +196,8 @@
         </section>
 
         <!--SECTION AKSES LOKASI-->
-        <section id="section-akses-lokasi" class="body-section center">
-
+        <div id="section-akses-lokasi">
+        <section id="back-test" class="body-section center">
             <div class="container">
                 <div>
                     <h1 class="text-center"><span class="section-header"><b>Lokasi Desa Tawangsari</b></span></h1>
@@ -220,7 +220,9 @@
                     </div>
                 </div>
             </div>
+      
         </section>
+    </div>
     </main>
 
 
