@@ -268,7 +268,7 @@
             </div>
         </div>
         <div id="footer-bottom" class="text-center">
-            <p>Desa Tawangsari, Kecamatan Kaligesing, Kabupaten Purworejo</p>
+            <p>Desa Tawangsari, Kecamatan Kaligesing, Kabupaten Purworejoa</p>
         </div>
     </footer>
     
