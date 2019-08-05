@@ -137,9 +137,14 @@
                 <!---  SECTION ABOUT --->
                 <div class="col-md footer-section">
                     <div id="footer-section-about">
-                        <p>
-                            <img src="/res/logo-hz.svg" width="295px">
-                        </p>
+                            <div style="display:flex">
+                                    <div style="padding-right: 10px; padding-bottom: 20px">
+                                        <img src="{{asset('res/l_purworedjo.png')}}" alt="" srcset="" style="max-height:110px">
+                                    </div>
+                                    <div style="padding-left: 10px; padding-bottom: 20px">
+                                        <img src="{{asset('res/l_kkntawangsari.png')}}" alt="" srcset=""style="max-height:100px">
+                                    </div>
+                                </div>
                         <p class="text">
                             Website Desa ini dibuat oleh Unit KKN-PPM Universitas Gadjah Mada 2019 Kecamatan Kaligesing
                             untuk Desa Tawangsari.</p>
