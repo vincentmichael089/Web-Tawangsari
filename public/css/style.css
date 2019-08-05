@@ -60,6 +60,7 @@
     width: inherit;
     background: #fff;
     box-shadow: 0 10px 29px 0 rgba(68,88,144,.1);  
+    
 }
 
 .berita-container{
@@ -72,9 +73,15 @@
 }
 
 .berita-content{
-    color: #032e3e
+
 }
 
+.post-link{
+    color: #032e3e
+}
+.post-link:hover{
+    color: #079941;
+}
 
 
 h1,h2,h3,h4, p {
@@ -335,6 +342,15 @@ footer{
 
     .berita-pic{
         opacity: 0.7;
+    
     }
 
+    .post-link{
+        color: whitesmoke;
+    }
+
+    .post-link:hover{
+        color: #07ff6a;
+    }
+    
 }

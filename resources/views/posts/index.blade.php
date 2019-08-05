@@ -87,18 +87,18 @@
                 @if(count($posts)>0)
                     @foreach ($posts as $post)
                     <div class="levitate-2 " style=" display: inline-block;">
-                        <a href="/posts/{{$post->id}}" >
+                        <a href="/posts/{{$post->id}}" class="post-link" style="text-decoration: none" >
                            <div class="box-berita" style="padding: 0;" >
                                 <div class="row">
-                                        <div class="col-md-4" style="min-height:150px; ">
+                                        <div class="col-md-4" style="height:150px; ">
                                             <div style="background: black">
-                                            <img src="/storage/cover_images/{{$post->cover_image}}" style="width:100%; " class="berita-pic">
+                                            <img src="/storage/cover_images/{{$post->cover_image}}" style="width:100%; height: 100% " class="berita-pic">
                                             </div>
                                         </div>
                                         <div class="col-md-8" style="text-align: start;">
                                             <div class="berita-content" style="padding: 1.5em;">
-                                                <h2>{{$post->title}}</h2>
-                                            <small>Dibagikan tanggal {{$post->created_at}} oleh {{$post->user->name}}</small>
+                                            <h2 style="font-weight:600">{{$post->title}}</h2>
+                                            <small><span style="font-weight: 500">Dibagikan tanggal {{$post->created_at}} oleh {{$post->user->name}}</span></small>
                                             </div>
                                         </div>
                                 </div>
