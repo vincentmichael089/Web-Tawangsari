@@ -97,6 +97,8 @@
                         <div class="form-group">
                             {{Form::file('cover_image')}}
                         </div>
+                        <div>                            <small>maksimum size gambar: 2MB</small></div>
+                        <br>
                             {{Form::submit('Submit',['class'=>'btn btn-primary'])}}
                     {{ Form::close() }}
             </div>
