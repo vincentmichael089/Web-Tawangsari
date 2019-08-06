@@ -235,7 +235,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <!---  SECTION ABOUT --->
-                <div class="col-md footer-section">
+                <div class="col-lg footer-section">
                     <div id="footer-section-about">
                         <div style="display:flex">
                             <div style="padding-right: 10px; padding-bottom: 20px">
@@ -251,13 +251,13 @@
                 </div>
 
                 <!-- SECTION CONTACTS -->
-                <div class="col-md footer-section">
+                <div class="col-lg footer-section">
                     <div id="footer-section-contacts">
                         <div class="footer-section-h5">
                             <h5>Kontak</h5>
                         </div>
                         <ul class="contact-info">
-                            <li><span class="contacts-info-title">Telepon:</span><br>(xxxx) xxxxxx</li>
+                    
                             <li><span class="contacts-info-title">Alamat:</span><br>Jl. Kyai Kuasyen no.1, Desa
                                 Tawangsari, Kecamatan
                                 Kaligesing, Kabupaten Purworejo, Jawa Tengah, Indonesia.</li>
