@@ -263,11 +263,11 @@ footer{
   }
 
   .scroll-top {
-    width: 60px;
-    height: 60px;
+    width: 2.5em;
+    height: 2.5em;
     position: fixed;
-    bottom: 2.5em;
-    right: 2.5em;
+    bottom: 2em;
+    right: 2em;
     display: none;
     text-decoration: none;
     -webkit-border-radius: 6px;
