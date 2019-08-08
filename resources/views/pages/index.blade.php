@@ -100,11 +100,13 @@
         <section id="section-landing" class="body-section">
             <div class="container center image-wrapper">
                 <h1 id="landing-word">
-                    <span class="" style="font-weight: 600;">Selamat Datang di Website Desa Tawangsari</span>
+                     Selamat Datang di Website Desa Tawangsari
                 </h1>
             </div>
 
-            <img id="bottom-image" src="../res/section-trans.svg" alt="" style="width: 100vm">
+            <div>
+                    <img id="bottom-image" src="../res/section-trans.svg" alt="" style="width: 100vm;">
+            </div>
 
         </section>
         <!--SECTION PROFIL-->
