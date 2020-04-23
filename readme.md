@@ -1,4 +1,4 @@
-Repository dari Website Desa Tawangsari, Kecamatan Kaligesing, Kabupaten Purworejo. Dibuat oleh Tim KKN-PPM UGM Kaligesing.
+Repository dari Website Desa Tawangsari, Kecamatan Kaligesing, Kabupaten Purworejo. Dibuat untuk Tim KKN-PPM UGM Kaligesing.
 
 url = tawangsari.id
 archived = https://web.archive.org/web/20191215050816/https://tawangsari.id/
